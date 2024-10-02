@@ -1,0 +1,110 @@
+body{
+    display:  grid;
+}
+#header{
+    width: 88vw;
+    padding-left: 2vw;
+    margin-top: 2vh;
+    margin-left: 4vw;
+    display: grid;
+    grid-template-columns: 12vw 40vw 10vw 18vw;
+    grid-column-gap: 1vw;
+}
+
+ ul{
+     line-height: 1.5em;
+ }
+#main{
+    margin-top: 1vh;
+    min-height: 80vh;
+    width: 93vw;
+    background-image: linear-gradient(180deg, #cfe7ff, #d2cdee);
+    padding-left: 2vw;
+    padding-top: 1vh;
+    margin-left: 2vw;
+    border-radius: 40px;
+    display: grid;
+    grid-template-columns: 28vw 28vw 28vw;
+    justify-items: center;
+    text-align: justify;
+    grid-column-gap: 3vw;
+}
+#column1{
+    padding-top: 2vh;
+}
+#footer{
+    margin-top: 2vh;
+    width: 88vw;
+    padding-right: 5vw;
+    margin-left: 4vw;
+    text-align: right;
+}
+.social-links-item {
+    align-items: center;
+    justify-content: center;
+    width: 10vw;
+    height: 10vw;
+    color: #fff;
+    background-repeat: no-repeat;
+    border: 1px solid #fff;
+    overflow: hidden;
+}
+.photo{
+    border-radius: 50%;
+    height: 160px;
+    width: 160px;
+    border: 1px solid #ddd;
+    padding: 5px;
+}
+.physicist{
+    height: 16vw;
+    width: 16vw;
+}
+#number{
+    margin-left: 5vw;
+    margin-top: 10vh;
+}
+
+#col{
+    margin-top: 10vh;
+}
+@media (max-width: 1300px) {
+    body {
+        font-size: 20px;
+    }
+    div{
+        width: 100%;
+
+    }
+    #header{
+        grid-template-columns: repeat(2, 1fr);
+        padding-left: 1.5vw;
+    }
+    #number{
+        margin-top: 2vh;
+    }
+    #col{
+        margin-top: 2vh;
+    }
+    #main{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    #column1{
+        width: 90%;
+    }
+    #column2{
+        width: 90%;
+    }
+    #column3{
+        width: 90%;
+    }
+    .physicist{
+        height: 40vw;
+        width: 40vw;
+    }
+    .photo {
+        margin-top: 10vh;
+        height: 28vw;
+        width: 28vw;
+    }
+}
